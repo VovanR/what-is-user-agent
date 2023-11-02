@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Agent</title>
+  <style>
+    .copyright {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      opacity: 0.4;
+      font-family: monospace;
+      background-color: #fff;
+      transition: opacity 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+      font-size: 100%;
+      padding: 1em;
+      text-decoration: none;
+      color: #000;
+      white-space: nowrap;
+    }
+
+    .copyright:hover {
+      opacity: 1 !important;
+      text-decoration: none;
+    }
+
+    .copyright__license {}
+
+    .copyright__author {
+      display: none;
+      text-decoration: underline;
+    }
+
+    .copyright:hover .copyright__author {
+      display: inline-block;
+    }
+
+    .copyright {
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      background-clip: padding-box;
+      z-index: 10;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+
+  <a class="copyright" href="https://github.com/vovanr/what-is-user-agent" target="_blank" rel="noopener noreferrer">
+    <span class="copyright__license">MIT ©</span> <span class="copyright__author">Vladimir Rodkin</span>
+  </a>
+
+  <script type="module" src="/src/main.js"></script>
+
+  <noscript>
+    Please&nbsp;enable&nbsp;<strong>JavaScript</strong> in&nbsp;your&nbsp;browser.
+  </noscript>
+</body>
+</html>
